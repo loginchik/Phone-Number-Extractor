@@ -1,5 +1,12 @@
 .idea/
 venv/
 
+# Caches
 __pycache__/
 */__pycache__/
+
+# Pytest
+.coverage
+htmlcov/
+coverage.xml
+>>>>>>> develop
