@@ -31,7 +31,7 @@ def test_success(text: str, expected: list[str]):
         expected (list[str]): Expected result in correct order and format
     """
     extractor = PhoneNumberExtractor()
-    result = list(extractor.process_test(text))
+    result = list(extractor.process_text(text))
 
     assert isinstance(result, list)
     assert len(result) == len(expected)
@@ -50,7 +50,7 @@ def test_no_number(text: str) -> None:
     """
     extractor = PhoneNumberExtractor()
 
-    result = list(extractor.process_test(text))
+    result = list(extractor.process_text(text))
 
     assert isinstance(result, list)
     assert len(result) == 0
